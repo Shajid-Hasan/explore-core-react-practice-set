@@ -2,19 +2,39 @@
 import './App.css'
 import Food from './ToDo';
 import ToDo from './ToDo';
+import Actor from './actor';
+import Singer from './singer';
 
 function App() {
+  // const time = '100';
 
-  const rest = 'need rest';
-  const money = '90';
-  const time = '1/2 an hour';
-  const hotel = 'Singara House'
+  // const rest = 'need rest';
+  // const money = '90';
+  // const time = '1/2 an hour';
+  // const hotel = 'Singara House'
+
+  const actors = ['Salman khan', 'Sharukh Khan', 'Amir Khan', 'hrittik', 'Akshoy'];
+
+  const singers = [
+    {id : 1, name : 'Alan Walker', age : 30},
+    {id : 2, name : 'Justin Beiber', age : 25},
+    {id : 3, name : 'Selena Gomez', age : 28}
+  ]
 
   return (
     <>
       <h1>React core concepts</h1>
 
-    <Food resturent="Cafee Rio" hungry={true} rest={rest} money={money} time={time} hotel={hotel}></Food>
+      {
+        singers.map(singer => <Singer key={singer.id} singer={singer}>{singer}</Singer>)
+      }
+
+    {/* {
+      actors.map(actor => <Actor actor={actor}></Actor>)
+    } */}
+
+
+    {/* <Food resturent="Cafee Rio" hungry={true} rest={rest} money={money} time={time} hotel={hotel}></Food> */}
 
       {/* <ToDo task="learn react" isDone={true} time={time}></ToDo>
       <ToDo task="Revice JS" isDone={false}></ToDo>

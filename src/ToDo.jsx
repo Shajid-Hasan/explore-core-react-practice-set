@@ -21,11 +21,22 @@
 //     return <li>To be done : {task}</li>
 // }
 
+// condition
 export default function Food({resturent, hungry, rest, money, time, hotel}){
-    if(hungry && money >= 90){
-        return <food>Go to Resturent {resturent} and after meal {time} {rest}</food>
-    }
-    else{
-        return <food>Going to {hotel}</food>
-    }
+    // if(hungry && money >= 90){
+    //     return <food>Go to Resturent {resturent} and after meal {time} {rest}</food>
+    // }
+    // else{
+    //     return <food>Going to {hotel}</food>
+    // }
+
+
+    
+    // condition rendering : 3 ternery
+    return (hungry && money >= 90) ? <food>Go to Resturent {resturent} and after meal {time} {rest}</food> : <food>Going to {hotel}</food>
 }
+
+
+// export default function ToDo({task, isDone, time=0}){
+//     return isDone ? <li>Done : {task} time: {time}</li> : <li>Not Done : {task}</li>
+// }
