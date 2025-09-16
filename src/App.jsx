@@ -29,12 +29,12 @@ function App() {
         singers.map(singer => <Singer key={singer.id} singer={singer}>{singer}</Singer>)
       }
 
-    {/* {
+      {/* {
       actors.map(actor => <Actor actor={actor}></Actor>)
-    } */}
+      } */}
 
 
-    {/* <Food resturent="Cafee Rio" hungry={true} rest={rest} money={money} time={time} hotel={hotel}></Food> */}
+      {/* <Food resturent="Cafee Rio" hungry={true} rest={rest} money={money} time={time} hotel={hotel}></Food> */}
 
       {/* <ToDo task="learn react" isDone={true} time={time}></ToDo>
       <ToDo task="Revice JS" isDone={false}></ToDo>
