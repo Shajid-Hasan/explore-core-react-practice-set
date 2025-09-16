@@ -13,26 +13,36 @@ function App() {
         <Developer name="Jhankar" tech="python programer"></Developer>
         <Device device="samsung-z-fold 5 pro" brand="samsung" price="130000" warenty="2yr"></Device>
         <Pet bird="parot" origin="macaw" cat="partian"></Pet>
+        <Player name="Tamim" run="100"></Player>
     </>
   )
 }
 
-function Developer(props){
-  console.log(props);
+// Distructuring Method
+function Player({name, run}){
+  return(
+    <div className='player'>
+      <h3>Name : {name}</h3>
+      <p>Run : {run}</p>
+    </div>
+  )
+}
 
+// Distructuring Method
+function Developer({name, tech}){
   return(
     <div style={{
       border: '2px solid green',
       borderRadius: '20px'
     }}>
-      <h3>Developer: {props.name}</h3>
-      <p>Technology: {props.tech}</p>
+      <h3>Developer: {name}</h3>
+      <p>Technology: {tech}</p>
     </div>
   )
 }
 
-function Device(props){
-  console.log(props)
+// Distructuring Method
+function Device({device, brand, price, warenty}){
   return(
     <div style={{
       margin: '10px',
@@ -40,14 +50,15 @@ function Device(props){
       border: '2px solid salmon',
       borderRadius: '20px',      
     }}>
-      <h4>Device name : {props.device} </h4>
-      <p>Brand : {props.brand} </p>
-      <p>Price : {props.price} </p>
-      <p>Warenty : {props.warenty} </p>
+      <h4>Device name : {device} </h4>
+      <p>Brand : {brand} </p>
+      <p>Price : {price} </p>
+      <p>Warenty : {warenty} </p>
     </div>
   )
 }
 
+// Props Method
 function Person(){
   const age = 17;
   const name = 'Shajid';
@@ -60,6 +71,7 @@ function Person(){
   )
 }
 
+// Props Method
 function Student(props){
   console.log(props)
   return(
@@ -78,6 +90,7 @@ function Student(props){
 
 }
 
+// Props Method
 function Pet(props){
   console.log(props)
   return(
