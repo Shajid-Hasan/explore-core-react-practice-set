@@ -1,19 +1,33 @@
 
 import './App.css'
+import Food from './ToDo';
+import ToDo from './ToDo';
 
 function App() {
+
+  const rest = 'need rest';
+  const money = '90';
+  const time = '1/2 an hour';
+  const hotel = 'Singara House'
 
   return (
     <>
       <h1>React core concepts</h1>
-        <Student name="Shajid" dept="CSE" id="153-15-6573" sec="L"></Student>
+
+    <Food resturent="Cafee Rio" hungry={true} rest={rest} money={money} time={time} hotel={hotel}></Food>
+
+      {/* <ToDo task="learn react" isDone={true} time={time}></ToDo>
+      <ToDo task="Revice JS" isDone={false}></ToDo>
+      <ToDo task="take rest" isDone={true} time="100"></ToDo> */}
+
+        {/* <Student name="Shajid" dept="CSE" id="153-15-6573" sec="L"></Student>
         <Person></Person>
         <Developer name="Alex" tech="Java programer"></Developer>
         <Developer name="Shajid" tech="JS programer"></Developer>
         <Developer name="Jhankar" tech="python programer"></Developer>
         <Device device="samsung-z-fold 5 pro" brand="samsung" price="130000" warenty="2yr"></Device>
         <Pet bird="parot" origin="macaw" cat="partian"></Pet>
-        <Player name="Tamim" run="100"></Player>
+        <Player name="Tamim" run="100"></Player> */}
     </>
   )
 }
